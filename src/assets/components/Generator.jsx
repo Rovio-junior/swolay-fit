@@ -79,11 +79,10 @@ export default function Generator(props) {
                 setPoison(type);
               }}
               className={
-                "duration-200 px-4 py-3 rounded-lg " +
+                "duration-200 px-4 py-3 rounded-lg border " +
                 (type === poison
-                  ? "bg-green-600 border-red-600"
-                  : "bg-slate-950 border-blue-400") +
-                " hover:border-red-600"
+                  ? "bg-green-600 border-blue-600"
+                  : "bg-slate-950 border-blue-400 hover:border-green-600")
               }
               key={typeIndex}
             >
@@ -146,11 +145,10 @@ export default function Generator(props) {
                 setGoal(scheme);
               }}
               className={
-                "border py-3 rounded-lg px-4 " +
+                "duration-200 px-4 py-3 rounded-lg border " +
                 (scheme === goal
-                  ? "bg-green-600 border-green-600"
-                  : "bg-slate-950 border-blue-400") +
-                " duration-200 hover:border-blue-600"
+                  ? "bg-green-600 border-blue-600"
+                  : "bg-slate-950 border-blue-400 hover:border-green-600")
               }
               key={schemeIndex}
             >
