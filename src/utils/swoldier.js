@@ -58,15 +58,6 @@ export const WORKOUTS = {
   },
 };
 
-//write a function that flattens this thing with all the variants
-//if athome, then have to specify equipment (if required otherwise bodyweight)
-//add instructions for substitutions (at home substitutions) for weights etc
-//variant is just going to be gym (forget about home stuff as long as one of the variants is
-//make it so that you can't get the same varient in a single workout (maybe)
-//add all the other variants to the subsubstitute list
-//pick a random exercise
-//for non-members, exclude all the at home specific exercises (anything particularly pussy like a lot of the bodyweight stuff)
-
 const bw_exercises = {};
 
 export const EXERCISES = {
@@ -86,7 +77,7 @@ export const EXERCISES = {
       underhand:
         "Lying on a flat bench, grab the bar with a reversed underhand grip, so that you are now holding the barbell thumbs pointing outwards. Be sure to reduce the weight when performing this variation of the exercise.",
     },
-    unit: "reps", //vs duration
+    unit: "reps", 
     muscles: ["chest"],
     description:
       "Ensure your scapula are retracted when performing the bench press, arms 2 palm widths wider than shoulder width. Lower the bar with your elbows flared at a 45 degree angle from your torso, touching the bar down to your chest at your nipple line.",
@@ -141,7 +132,7 @@ export const EXERCISES = {
       level: [0, 1, 2],
       equipment: ["dumbbells", "bands"],
     },
-    unit: "reps", //vs duration
+    unit: "reps", 
     muscles: ["chest", "shoulders"],
     description:
       "Standing with a dumbbell in either hand, palms facing forwards and chest puffed out, raise one dumbbell up and across your body until your palm is facing the ceiling and your hand has crossed your body. Lower slowing and repeat on the other side.",

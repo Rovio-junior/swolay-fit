@@ -31,8 +31,6 @@ export default function Generator(props) {
   } = props;
   const [showModal, setShowModal] = useState(false);
 
-  // let showModal = false
-
   function toggleModal() {
     setShowModal(!showModal);
   }
@@ -81,8 +79,8 @@ export default function Generator(props) {
               className={
                 "duration-200 px-4 py-3 rounded-lg border " +
                 (type === poison
-                  ? "bg-green-600 border-blue-600"
-                  : "bg-slate-950 border-blue-400 hover:border-green-600")
+                  ? "bg-green-600 border-cyan-600"
+                  : "bg-slate-950 border-cyan-400 hover:border-green-600")
               }
               key={typeIndex}
             >
@@ -94,9 +92,9 @@ export default function Generator(props) {
       <Header
         index={"02"}
         title={"Lock on targets"}
-        description={"Select the muscles judged for annihilation."}
+        description={"Select the muscles you want to target."}
       />
-      <div className="bg-slate-950  border border-solid border-blue-400 rounded-lg flex flex-col">
+      <div className="bg-slate-950  border border-solid border-cyan-400 rounded-lg flex flex-col">
         <button
           onClick={toggleModal}
           className="relative p-3 flex items-center justify-center"
@@ -119,8 +117,8 @@ export default function Generator(props) {
                   }}
                   key={muscleGroupIndex}
                   className={
-                    "hover:text-blue-400 duration-200 " +
-                    (muscles.includes(muscleGroup) ? " text-blue-400" : " ")
+                    "hover:text-cyan-400 duration-200 " +
+                    (muscles.includes(muscleGroup) ? " text-cyan-400" : " ")
                   }
                 >
                   <p className="uppercase">
@@ -147,8 +145,8 @@ export default function Generator(props) {
               className={
                 "duration-200 px-4 py-3 rounded-lg border " +
                 (scheme === goal
-                  ? "bg-green-600 border-blue-600"
-                  : "bg-slate-950 border-blue-400 hover:border-green-600")
+                  ? "bg-green-600 border-cyan-600"
+                  : "bg-slate-950 border-cyan-400 hover:border-green-600")
               }
               key={schemeIndex}
             >
